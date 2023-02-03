@@ -87,6 +87,7 @@ If you are an internal or external auditor of a protocol, you should schedule (a
     * [C3: Oracle](<./2.0/0x200-Components/0x203-C3-Oracle.md>)
     * [C4: Vault](<./2.0/0x200-Components/0x204-C4-Vault.md>)
     * [C5: Bridge](<./2.0/0x200-Components/0x205-C5-Bridge.md>)
+    * [C6: NFT](<./2.0/0x200-Components/0x206-C6-NFT.md>)
 * I: Integrations
     * [I1: Basic](<./2.0/0x300-Integrations/0x301-I1-Basic.md>)
     * [I2: Token](<./2.0/0x300-Integrations/0x302-I2-Token.md>)
