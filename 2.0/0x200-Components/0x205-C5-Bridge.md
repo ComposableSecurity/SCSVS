@@ -23,7 +23,11 @@ Category “C5” lists requirements related to the Bridge smart contract as one
 | **C5.6** | Verify that bridge uses a nonce parameter to allow the same operation (the same sender, receiver, and amount) to be executed multiple times. |
 | **C5.7** | Verify that signed message cannot be used in a different context (use domain separator from EIP-712). |
 | **C5.8** | Verify that the case of 0 being returned by ecrecover function is handled securely. |
-
+| **C5.9** | Verify that privileged contracts are separated from cross-chain relay calls. Attacker should not be able to cross-call the privileged contract. |
+| **C5.11** | Verify each supported blockchain's finality is taken into account when settling relay calls. |
+| **C5.12** | Verify that bridge disregards calls originating from different function than designed. |
+| **C5.13** | Verify that bridge requires adequate amount of fees to process the message. |
+| **C5.14** | Verify that the maximum gas consumption for relayed messages is limited or fully backed by sender (e.g., in terms of fee). |
 
 ## References
 For more information, see also:
@@ -37,3 +41,5 @@ For more information, see also:
 * [RONIN NETWORK - REKT](https://rekt.news/ronin-rekt/)
 * [EIP-712: Ethereum typed structured data hashing and signing](https://eips.ethereum.org/EIPS/eip-712)
 * [Learn EVM attacks - Bridges](https://github.com/coinspect/learn-evm-attacks#bridges)
+* [Awesome Interoperability - bridges](https://docs.nomad.xyz/resources/awesome-interoperability)
+* [PolyNetwork hack - privilege escalation via cross-chain call](https://research.kudelskisecurity.com/2021/08/12/the-poly-network-hack-explained/)

@@ -20,7 +20,7 @@ Category “G7” lists requirements related to the arithmetic operations of the
 | **G7.7** | Verify that in calculations, multiplication is performed before division for accuracy. | 
 | **G7.8** | Verify that contract does not assume fixed-point precision and use a multiplier or store both the numerator and denominator. | 
 | **G7.9** | Verify that rounding uses secure granularity (e.g. seconds instead of days). |
-| **G7.10** | Verify that rounding in extreme conditions (e.g. very often) does not cause amplified losses (e.g. lack of interests accrued). |
+| **G7.10** | Verify that rounding in extreme conditions (e.g. very often) does not cause amplified losses (e.g. lack of interests accrued). Use RayWad library for such calculations. |
 
 ## References
 

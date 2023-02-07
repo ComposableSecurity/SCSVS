@@ -23,6 +23,12 @@ Category “C4” lists requirements related to the Vault smart contract as one 
 | **C4.6** | Verify that shares are distributed in proportion to the user's deposited funds. |
 | **C4.7** | Verify that the same amount of shares for different users allows the same amount of funds to be withdrawn. |
 | **C4.8** | Verify that a user depositing the same amount earlier will get more rewards than the one who deposits the same amount later. |
+| **C4.9** | Verify that depositing rounds down the assets and withdrawing rounds up. |
+| **C4.10** | Verify that the transferred amount is confirmed by checking balances before and after the deposit if the vault is going to support fee-on-transfer tokens (or any token is allowed). |
+| **C4.11** | Verify that the vault is allowed to transfer tokens only from *msg.sender* to prohibit stealing from users who approved the vault contract. |
+
+| **C4.12** | Verify that the deposit and withdraw business logic is consistent and symmetrical, especially when re-sending tokens to the same address (*from* == *to*). |
+
 
 ## References
 
@@ -30,3 +36,6 @@ For more information, see also:
 
 * [Vault | Solidity 0.8](https://www.youtube.com/watch?v=HHoa0c3AOqo)
 * [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626)
+* [ERC4626 Tokenized Vault Standard](https://academy.apeworx.io/articles/erc-4626-tokenized-vault-standard)
+* [Securing ERC4626 Implementations](https://www.youtube.com/watch?v=5KVD7EX6HWQ)
+* [Yearn Finance Vault Audit](https://github.com/yearn/yearn-security/blob/master/audits/20210719_ToB_yearn_vaultsv2/ToB_-_Yearn_Vault_v_2_Smart_Contracts_Audit_Report.pdf)

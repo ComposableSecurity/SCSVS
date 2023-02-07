@@ -28,6 +28,8 @@ Category “I2” lists requirements related to the Token smart contract as one 
 | **I2.11** | Verify that transfer of external Tokens has been successful, comparing the balances before and after it. |
 | **I2.12** | Verify that project contracts handles correctly both types of tokens, those that return false on an error and those that revert. |
 | **I2.13** | Verify that the contract reverts on failed transfer. |
+| **I2.14** | Verify that the protocol handles double-entry tokens (tracking user balances in a contract represented by two addresses) correctly or forbids them. |
+| **I2.15** | Use OpenZeppelin's SafeERC20 for interacting with ERC20 tokens. |
 
 ## References
 
@@ -39,3 +41,4 @@ For more information, see also:
 * [Token Implementation Best Practice](https://consensys.github.io/smart-contract-best-practices/tokens/)
 * [iToken Duplication Incident Report](https://bzx.network/blog/incident)
 * [The Dangers of Surprising Code](https://samczsun.com/the-dangers-of-surprising-code/)
+* [ERC20 standard peculiarities](https://github.com/d-xo/weird-erc20)
