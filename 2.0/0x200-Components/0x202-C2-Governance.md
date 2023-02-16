@@ -24,7 +24,7 @@ Category “C2” lists requirements related to the Governance smart contract as
 | **C2.7** | Verify that special actions that can be performed only by Governance are marked in the documentation. |
 | **C2.8** | Verify that the Governance cannot do more than declared in the documentation. |
 | **C2.9** | Verify that the ownership transfer is a 2-step process where the candidate accepts it in a separate transaction and the previous owner does not lose privileges until it is done. |
-| **C2.11** | Verify that key operations on the Governance contract can only be performed with the appropriate permissions. Functions in this contract should not be available to general users.|
+| **C2.10** | Verify that key operations on the Governance contract can only be performed with the appropriate permissions. Functions in this contract should not be available to general users.|
 
 ## References
 
