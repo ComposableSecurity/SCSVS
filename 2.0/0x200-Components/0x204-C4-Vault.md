@@ -15,19 +15,17 @@ Category “C4” lists requirements related to the Vault smart contract as one 
 
 | # | Description |
 | --- | --- |
-| **C4.1** | Verify that there are no vulnerabilities associated with the Vault component. |
-| **C4.2** | Verify that the user's balance is updated based on funds received and not the funds declared to be sent. |
-| **C4.3** | Verify that only the user has access to their funds unless they explicitly allow their funds to be managed. |
-| **C4.4** | Verify that the user can safely withdraw their funds at any time, even during an emergency pause. |
-| **C4.5** | Verify that if there is a Vault in the system, then users' funds are stored on it. |
-| **C4.6** | Verify that shares are distributed in proportion to the user's deposited funds. |
-| **C4.7** | Verify that the same amount of shares for different users allows the same amount of funds to be withdrawn. |
-| **C4.8** | Verify that a user depositing the same amount earlier will get more rewards than the one who deposits the same amount later. |
-| **C4.9** | Verify that depositing rounds down the assets and withdrawing rounds up. |
-| **C4.10** | Verify that the transferred amount is confirmed by checking balances before and after the deposit if the vault is going to support fee-on-transfer tokens (or any token is allowed). |
-| **C4.11** | Verify that the vault is allowed to transfer tokens only from *msg.sender* to prohibit stealing from users who approved the vault contract. |
-
-| **C4.12** | Verify that the deposit and withdraw business logic is consistent and symmetrical, especially when re-sending tokens to the same address (*from* == *to*). |
+| **C4.1** | Verify that the user's balance is updated based on funds received and not the funds declared to be sent. |
+| **C4.2** | Verify that only the user has access to their funds unless they explicitly allow their funds to be managed. |
+| **C4.3** | Verify that the user can safely withdraw their funds at any time, even during an emergency pause. |
+| **C4.4** | Verify that if there is a Vault in the system, then users' funds are stored on it. |
+| **C4.5** | Verify that shares are distributed in proportion to the user's deposited funds. |
+| **C4.6** | Verify that the same amount of shares for different users allows the same amount of funds to be withdrawn. |
+| **C4.7** | Verify that a user depositing the same amount earlier will get more rewards than the one who deposits the same amount later. |
+| **C4.8** | Verify that depositing rounds down the assets and withdrawing rounds up. |
+| **C4.9** | Verify that the transferred amount is confirmed by checking balances before and after the deposit if the vault is going to support fee-on-transfer tokens (or any token is allowed). |
+| **C4.10** | Verify that the vault is allowed to transfer tokens only from *msg.sender* to prohibit stealing from users who approved the vault contract. |
+| **C4.11** | Verify that the deposit and withdraw business logic is consistent and symmetrical, especially when re-sending tokens to the same address (*from* == *to*). |
 
 
 ## References

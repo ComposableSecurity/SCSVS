@@ -15,10 +15,9 @@ Category “I3” lists requirements related to the Oracle smart contract as one
 
 | # | Description |
 | --- | --- |
-| **I3.1** | Verify that there are no vulnerabilities associated with Oracle integration. |
-| **I3.2** | Verify that, when using Uniswap TWAP as a price oracle, the period is long enough to make its manipulation unprofitable for the attacker (compared to the funds at potential risk). |
-| **I3.3** | Verify that Oracle data is up-to-date. |
-| **I3.4** | Verify that no spot oracle is used (e.g. spot price from Uniswap pool). |
+| **I3.1** | Verify that, when using Uniswap TWAP as a price oracle, the period is long enough to make its manipulation unprofitable for the attacker (compared to the funds at potential risk). |
+| **I3.2** | Verify that Oracle data is up-to-date. |
+| **I3.3** | Verify that no spot oracle is used (e.g. spot price from Uniswap pool). |
 | **I4.4** | Verify that, when using Uniswap V3 TWAP as price oracle, liquidity is high enough and is distributed widely across most of the price range. |
 | **I4.5** | Verify that, the use a decentralized off-chain oracles unsusceptible to on-chain price manipulation attacks (e.g. Chainlink) is considered for low liquidity asset, ideally combining it with on-chain oracles to detect malicious values. |
 
