@@ -106,6 +106,9 @@ We recommend determining the severity of the risks related to the requirements w
 We recommend [Common Vulnerability Scoring System (CVSS)](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator), a free and open industry standard for assessing the severity of security vulnerabilities.
 
 ## License
+
+The SCSVS project was originally started by Damian Rusinek and Paweł Kuryłowicz in securing company in the following repository: https://github.com/securing/SCSVS.
+
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.  To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 The entire checklist is in a form similar to OWASP APPLICATION SECURITY VERIFICATION STANDARD v4.0.
