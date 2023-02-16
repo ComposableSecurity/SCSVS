@@ -16,18 +16,17 @@ Category “G2” lists requirements related to the policies, and procedures in 
 
 | # | Description |
 | --- | --- |
-| **G2.1** | Verify that there are no issues related to policies and procedures in the external company audit report. |
-| **G2.2** | Verify that the system's security is under constant monitoring (e.g. the expected level of funds). |
-| **G2.3** | Verify that there is a policy to track new security bugs and to update the libraries to the latest secure version. |
-| **G2.4** | Verify that the contact to the security department is publicly disclosed and the procedure for handling reported bugs (e.g., thorough BugBounty platform) is defined. |
-| **G2.5** | Verify that the process prior to adding new components to the system is defined. |
-| **G2.6** | Verify that the process of major system changes involves threat modeling by an external company. |
-| **G2.7** | Verify that the process of adding and updating components to the system includes a security audit by an external company. |
-| **G2.8** | Verify that there is a clear and known procedure in place in the event of a hack. |
-| **G2.9** | Verify that the procedure in the event of hack have defined individuals to execute required actions. |
-| **G2.10** | Verify that the procedure includes alarming other projects about the hack through trusted channels. |
-| **G2.11** | Verify that a procedure is defined in case one of the project's private keys is leaked. |
-| **G2.12** | Verify that the project has an emergency contact with the external company that conducted the last audit. |
+| **G2.1** | Verify that the system's security is under constant monitoring (e.g. the expected level of funds). |
+| **G2.2** | Verify that there is a policy to track new security bugs and to update the libraries to the latest secure version. |
+| **G2.3** | Verify that the contact to the security department is publicly disclosed and the procedure for handling reported bugs (e.g., thorough BugBounty platform) is defined. |
+| **G2.4** | Verify that the process prior to adding new components to the system is defined. |
+| **G2.5** | Verify that the process of major system changes involves threat modeling by an external company. |
+| **G2.6** | Verify that the process of adding and updating components to the system includes a security audit by an external company. |
+| **G2.7** | Verify that there is a clear and known procedure in place in the event of a hack. |
+| **G2.8** | Verify that the procedure in the event of hack have defined individuals to execute required actions. |
+| **G2.9** | Verify that the procedure includes alarming other projects about the hack through trusted channels. |
+| **G2.10** | Verify that a procedure is defined in case one of the project's private keys is leaked. |
+| **G2.11** | Verify that the project has an emergency contact with the external company that conducted the last audit. |
 
 ## References
 
