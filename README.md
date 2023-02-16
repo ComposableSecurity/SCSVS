@@ -24,9 +24,6 @@ You can use the SCSVS checklist in multiple ways:
 * As a self-check for developers.
 * To point areas which need further development in regards to security.
 
-The entire checklist is in a form similar to OWASP APPLICATION SECURITY VERIFICATION STANDARD v4.0.
-Every category has a brief description of the control objectives and a list of security verification requirements.
-
 **Key areas that have been included:**
 * [V1: Architecture, Design and Threat Modelling](./1.2/0x10-V1-Architecture-Design-Threat-modelling.md)
 * [V2: Access Control](./1.2/0x11-V2-Access-Control.md)
@@ -56,4 +53,11 @@ We recommend to determine the severity of the risks related with the requirement
 We recommend [Common Vulnerability Scoring System (CVSS)](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator), a free and open industry standard for assessing the severity of security vulnerabilities.
 
 **License:**
+
+The SCSVS project was originally started by Damian Rusinek and Paweł Kuryłowicz in the Securing company in the following repository: https://github.com/securing/SCSVS.
+
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.  To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+The entire checklist is in a form similar to OWASP APPLICATION SECURITY VERIFICATION STANDARD v4.0.
+Every category has a brief description of the control objectives and a list of security verification requirements.
+
