@@ -20,7 +20,7 @@ Category “C5” lists requirements related to the Bridge smart contract as one
 | **C5.3** | Verify that the message hash generation algorithm is resistant to collision attacks. |
 | **C5.4** | Verify that bridge includes source and destination chain identifiers in the signed message and correctly verifies them. |
 | **C5.5** | Verify that bridge does not allow spoofing chain identifiers. |
-| **C5.6** | Verify that bridge uses a nonce parameter to allow the same operation (the same sender, receiver, and amount) to be executed multiple times. |
+| **C5.6** | Verify that bridge uses a nonce parameter to prevent the same operation (the same sender, receiver, and amount) to be executed multiple times. |
 | **C5.7** | Verify that signed message cannot be used in a different context (use domain separator from EIP-712). |
 | **C5.8** | Verify that the case of 0 being returned by ecrecover function is handled securely. |
 | **C5.9** | Verify that privileged contracts are separated from cross-chain relay calls. Attacker should not be able to cross-call the privileged contract. |
