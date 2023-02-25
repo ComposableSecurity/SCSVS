@@ -9,7 +9,7 @@ Ensure that your project satisfies the following high-level requirements:
 * Backward compatibility is maintained and contracts behave as intended,
 * Users have the opportunity to see what changes may be introduced and are informed about them early enough so that they have time to react if necessary.
 
-Category “G3” lists requirements related to the upgradeabilitiy of the smart contracts.
+Category “G3” lists requirements related to the upgradeability of the smart contracts.
 
 ## Security Verification Requirements
 
