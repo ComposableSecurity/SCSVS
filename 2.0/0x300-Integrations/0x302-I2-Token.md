@@ -18,7 +18,7 @@ Category “I2” lists requirements related to the Token smart contract as one 
 | **I2.1** | Verify if the external Token implementation is compliant with the standard implementation. |
 | **I2.2** | Verify if the rules on which a new external Token can be added to the system have been defined (no restrictions, any tokens added by Governance, etc.).  |
 | **I2.3** | Verify that the allowlist approach is used when only selected tokens are introduced to the system. |
-| **I2.4** | Verify if the external Token implementation is non-standard (e.g. it is deflationary, or contains a fee), it has been taken into consideration. |
+| **I2.4** | Verify if the external Token implementation is non-standard (e.g. deflationary, fee-on-transfer, block list) it has been taken into consideration and do not block/affect deposits and withdrawals. |
 | **I2.5** | Verify that if the external Token implementation includes external calls, it has been taken into consideration (e.g., protection against reentrancy). |
 | **I2.6** | Verify that the external Token magnitude (decimals) are known and that all operations are executed with the correct magnitude. |
 | **I2.7** | Verify that the external Token supply is specified and corresponds to the documentation. |

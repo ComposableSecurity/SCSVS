@@ -27,6 +27,11 @@ Category “G2” lists requirements related to the policies, and procedures in 
 | **G2.9** | Verify that the procedure includes alarming other projects about the hack through trusted channels. |
 | **G2.10** | Verify that a procedure is defined in case one of the project's private keys is leaked. |
 | **G2.11** | Verify that the project has an emergency contact with the external company that conducted the last audit. |
+| **G2.12** | Verify that the team monitors and is notified about large TVL changes. |
+| **G2.13** | Verify that team monitors and is notified about multisig transactions. |
+| **G2.14** | Verify that team monitors and is notified about new governance votes. |
+| **G2.15** | Verify that frontline employees are trained for emergency situations and know what to do, they will be the ones that community will approach with questions. |
+
 
 ## References
 

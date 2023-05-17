@@ -26,6 +26,7 @@ Category “I1” lists requirements related to each integration with any smart 
 | **I1.10** | Verify that the smart contract attributes that can be updated by the external contracts (even trusted) are monitored (e.g. using events) and the procedure of incident response is implemented (e.g. the response to an ongoing attack). |
 | **I1.11** | Verify that the external contracts (even trusted) that are allowed to change the attributes of the smart contract (e.g., token price) have the following limitations implemented: a threshold for the change (e.g. no more/less than 5%) and a limit of updates (e.g., one update per day). |
 | **I1.12** | Verify that the address called via low-level call/delegatecall/staticcall exists (it will return *true* if the contract does not exist). |
+| **I1.13** | Verify that all interfaces are added to the mapping if *ERC-165 Standard Interface Detection* is used. |
 
 ## References
 
