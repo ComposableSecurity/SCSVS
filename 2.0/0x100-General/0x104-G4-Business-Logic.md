@@ -29,6 +29,7 @@ Category “G4” lists requirements related to the business logic of the smart 
 | **G4.11** | Verify that the global state is also updated when working on a copy of some data for optimization reasons. |
 | **G4.12** | Verify that when accepting ETH deposits directly and indirectly via WETH, you are validating the case of msg.value > 0 and the amount of WETH transferred in the same function call. |
 | **G4.13** | Verify that there are no off-by one errors, especially with *>=*, *<=* and *length - 1*. |
+| **G4.14** | Verify that string length in ABI decoded data is the same as declared one and there is an upper limit on the length of a string that can be passed to prevent run out of gas. |
 
 ## References
 

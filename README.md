@@ -1,5 +1,5 @@
 # Smart Contract Security Verification Standard  🚀
-
+![SCSVS_v2_example](https://github.com/wh01s7/SCSVS/assets/39416437/c70fa42f-d013-43a7-8733-33fb79ca3d95)
 ## Authors
 
 * Damian Rusinek [@drdr_zz](https://twitter.com/drdr_zz) (damian.rusinek@composable-security.com)
@@ -15,7 +15,7 @@ This list helps to avoid the majority of known security problems and vulnerabili
 * Help to develop high-quality code of smart contracts.
 * Help to mitigate known vulnerabilities by design.
 * Provide a checklist for security reviewers.
-* Provide a clear and reliable assessment - **Security Health Factor** - of how secure smart contracts are in the relation to the percentage of SCSVS coverage.
+* Provide a clear and reliable assessment - **Compliance score** - of how secure smart contracts are in the relation to the percentage of SCSVS coverage.
 
 ## 🔥 Updates in v2 🔥
 
@@ -26,6 +26,7 @@ Security, Composability, and Transparency are fundamentals of the SCSVS. These v
 * **Integrations** - components with which the project integrates, general recommendations and threats to frequently used smart contracts.
 
 ## How to use SCSVSv2
+![SCSVS_v2_example_checks](https://github.com/wh01s7/SCSVS/assets/39416437/dbe717dd-2679-4d0a-916f-4f2d39509cd2)
 
 You can use the SCSVS checklist in multiple ways:
 * As a starting point for formal threat modeling exercise.
@@ -56,13 +57,13 @@ If you are developing a protocol, you should schedule (and potentially delegate)
 
 If you are the owner of a protocol or represent the business side of the project, you should schedule and delegate the following actions:
 * Ask other protocols teams that yours is integrated with for their SCSVS coverage report.
-* Check the **Security Health Factor** of your protocol by doing SCSVS coverage of all 3 chapters.
+* Check the **Compliance score** of your protocol by doing SCSVS coverage of all 3 chapters.
 
 ### As Auditor 🥷
 
 If you are an internal or external auditor of a protocol, you should schedule (and potentially delegate) the following actions:
 * Do a threat modeling session (as soon as possible) to identify potential threats and decide how to handle them. Use the output of Architect actions as partial input.
-* Just before the release, do the SCSVS coverage of all 3 chapters to get the **Security Health Factor** of your protocol.
+* Just before the release, do the SCSVS coverage of all 3 chapters to get the **Compliance score** of your protocol.
 * Add SCSVS coverage report to the protocol repository.
 
 ## Table of contents
@@ -89,7 +90,6 @@ If you are an internal or external auditor of a protocol, you should schedule (a
     * [C5: Bridge](<./2.0/0x200-Components/0x205-C5-Bridge.md>)
     * [C6: NFT](<./2.0/0x200-Components/0x206-C6-NFT.md>)
     * [C7: Liquid staking](<./2.0/0x200-Components/0x207-C7-Liquid-staking.md>)
-    * [C8: Liquidity pool](<./2.0/0x200-Components/0x208-C8-Liquidity-pool.md>)
 * I: Integrations
     * [I1: Basic](<./2.0/0x300-Integrations/0x301-I1-Basic.md>)
     * [I2: Token](<./2.0/0x300-Integrations/0x302-I2-Token.md>)
