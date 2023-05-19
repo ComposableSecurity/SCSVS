@@ -1,5 +1,5 @@
 # Smart Contract Security Verification Standard  🚀
-![SCSVS_v2_example](https://github.com/ComposableSecurity/SCSVS/tree/master/assets/SCSVS_v2_example.png)
+![SCSVS_v2_example](/assets/SCSVS_v2_example.png)
 ## Authors
 
 * Damian Rusinek [@drdr_zz](https://twitter.com/drdr_zz) (damian.rusinek@composable-security.com)
@@ -26,7 +26,7 @@ Security, Composability, and Transparency are fundamentals of the SCSVS. These v
 * **Integrations** - components with which the project integrates, general recommendations and threats to frequently used smart contracts.
 
 ## How to use SCSVSv2
-![SCSVS_v2_example_checks](https://github.com/ComposableSecurity/SCSVS/tree/master/assets/SCSVS_v2_example_checks.png)
+![SCSVS_v2_example_checks](/assets/SCSVS_v2_example_checks.png)
 
 You can use the SCSVS checklist in multiple ways:
 * As a starting point for formal threat modeling exercise.
