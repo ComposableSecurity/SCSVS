@@ -24,7 +24,7 @@ Category “G1” lists requirements related to the architecture, design and thr
 | **G1.7** | Verify that if fallback function can be called by anyone, it is included in the threat modeling. |
 | **G1.8** | Verify that the business logic in contracts is consistent. Important changes in the logic should be allowed for all or none contract. |
 | **G1.9** | Verify that code analysis tools are in use that can detect potentially malicious code. |
-| **G1.10** | Verify that the latest version of the major Solidity release is used. |
+| **G1.10** | Verify that the latest version of Solidity release is used. |
 | **G1.11** | Verify that, when using the external implementation of contract, you use the current version which has not been superseded. |
 | **G1.12** | Verify that when functions are overridden to extend functionality, the super keyword is used to maintain functionality. |
 | **G1.13** | Verify that the order of inheritance is carefully specified. |
