@@ -42,3 +42,4 @@ For more information, see also:
 * [SWC-125 Incorrect Inheritance Order](https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-125)
 * [EIP 1052: EXTCODEHASH Opcode](https://eips.ethereum.org/EIPS/eip-1052)
 * [Smart Contract Auditing Heuristics](https://github.com/OpenCoreCH/smart-contract-auditing-heuristics?utm_source=substack&utm_medium=email#readme)
+* [Malicious revert reasons with faked lengths can disrupt order execution](https://github.com/sherlock-audit/2023-02-gmx-judging/issues/139)

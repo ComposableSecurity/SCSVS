@@ -1,5 +1,5 @@
 # Smart Contract Security Verification Standard  🚀
-![SCSVS_v2_example](https://github.com/wh01s7/SCSVS/assets/39416437/c70fa42f-d013-43a7-8733-33fb79ca3d95)
+![SCSVS_v2_example](https://github.com/ComposableSecurity/SCSVS/tree/master/assets/SCSVS_v2_example.png)
 ## Authors
 
 * Damian Rusinek [@drdr_zz](https://twitter.com/drdr_zz) (damian.rusinek@composable-security.com)
@@ -26,7 +26,7 @@ Security, Composability, and Transparency are fundamentals of the SCSVS. These v
 * **Integrations** - components with which the project integrates, general recommendations and threats to frequently used smart contracts.
 
 ## How to use SCSVSv2
-![SCSVS_v2_example_checks](https://github.com/wh01s7/SCSVS/assets/39416437/dbe717dd-2679-4d0a-916f-4f2d39509cd2)
+![SCSVS_v2_example_checks](https://github.com/ComposableSecurity/SCSVS/tree/master/assets/SCSVS_v2_example_checks.png)
 
 You can use the SCSVS checklist in multiple ways:
 * As a starting point for formal threat modeling exercise.
@@ -70,8 +70,7 @@ If you are an internal or external auditor of a protocol, you should schedule (a
 
 * G: General
     * [G1: Architecture, design and threat modeling](<./2.0/0x100-General/0x101-G1-Architecture-Design-Threat-Modeling.md>)
-    * [G2: Policies and procedures
-](<./2.0/0x100-General/0x102-G2-Policies-procedures.md>)
+    * [G2: Policies and procedures](<./2.0/0x100-General/0x102-G2-Policies-procedures.md>)
     * [G3: Upgradeability](<./2.0/0x100-General/0x103-G3-Upgradeability.md>)
     * [G4: Business logic](<./2.0/0x100-General/0x104-G4-Business-Logic.md>)
     * [G5: Access control](<./2.0/0x100-General/0x105-G5-Access-Control.md>)
@@ -90,6 +89,7 @@ If you are an internal or external auditor of a protocol, you should schedule (a
     * [C5: Bridge](<./2.0/0x200-Components/0x205-C5-Bridge.md>)
     * [C6: NFT](<./2.0/0x200-Components/0x206-C6-NFT.md>)
     * [C7: Liquid staking](<./2.0/0x200-Components/0x207-C7-Liquid-staking.md>)
+    * [C8: Liquidity pool](<./2.0/0x200-Components/0x208-C8-Liquidity-pool.md>)
 * I: Integrations
     * [I1: Basic](<./2.0/0x300-Integrations/0x301-I1-Basic.md>)
     * [I2: Token](<./2.0/0x300-Integrations/0x302-I2-Token.md>)
