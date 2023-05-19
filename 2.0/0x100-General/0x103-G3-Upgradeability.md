@@ -19,8 +19,8 @@ Category “G3” lists requirements related to the upgradeability of the smart 
 | **G3.2** | Verify that the upgrade process is executed by a multisig contract where more than one person must approve the operation. |
 | **G3.3** | Verify that timelocks are used for important operations so that the users have time to observe upcoming changes (please note that removing the potential vulnerability in this case may be more difficult). |
 | **G3.4** | Verify that *initialize()* can only be called once. |
-| **G3.5** | Verify that *initialize()* can only be called by an authorized role through appropriate modifiers (e.g. *initializer*, *onlyOwner*). |
-| **G3.6** | Verify if the update process is done in one transaction so that no one can front-run it. |
+| **G3.5** | Verify that *initialize()* can only be called by an authorized role through appropriate modifiers (e.g. *initializer*, *onlyOwner*) or it is called within the same function call, right after deployment. |
+| **G3.6** | Verify if the update process is done in one transaction or the update functions are authorized so that no one can front-run it. |
 | **G3.7** | Verify that upgradeable contracts have reserved gap on slots to prevent overwriting. |
 | **G3.8** | Verify that the number of reserved (as a gap) slots has been reduced appropriately if new variables have been added. |
 | **G3.9** | Verify that there are no changes in the order in which the contract state variables are declared, nor their types. |

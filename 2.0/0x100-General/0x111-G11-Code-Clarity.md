@@ -21,16 +21,17 @@ Category “G11” lists requirements related to the code clarity of the smart c
 | **G11.5** | Verify that the contract uses existing and tested code (e.g. token contract or mechanisms like *ownable*) instead of implementing its own. | 
 | **G11.6** | Verify that the same rules for variable naming are followed throughout all the contracts (e.g. use the same variable name for the same object). | 
 | **G11.7** | Verify that variables with similar names are not used. | 
-| **G11.8** | Verify that all storage variables are initialized. | 
-| **G11.9** | Verify that the functions which specify a return type return the value. | 
-| **G11.10** | Verify that all functions and variables are used. Unused ones should be removed. | 
-| **G11.11** | Verify that the *require* function is used instead of the *revert* function in *if* statement. | 
-| **G11.12** | Verify that the *assert* function is used to test for internal errors and the *require* function is used to ensure a valid condition on the input from users and external contracts. | 
-| **G11.13** | Verify that assembly code is used only if necessary. | 
+| **G11.8** | Verify that the functions which specify a return type return the value. | 
+| **G11.9** | Verify that all functions and variables are used. Unused ones should be removed. | 
+| **G11.10** | Verify that the custom errors in *if* statement are used instead of the *require* statement. | 
+| **G11.11** | Verify that the *assert* function is used to test for internal errors only. | 
+| **G11.12** | Verify that assembly code is used only if necessary. |
+| **G11.13** | Verify that only functions that are supposed to accept ether are marked as payable. | 
+
 
 ## References
 
 For more information, see also:
 
-* [Solidity Style Guide v0.8.17](https://docs.soliditylang.org/en/v0.8.17/style-guide.html)
+* [Solidity Style Guide](https://docs.soliditylang.org/en/latest/style-guide.html)
 * [Solidity: Security Considerations & Recommendations](https://solidity.readthedocs.io/en/v0.5.10/security-considerations.html#recommendations)
