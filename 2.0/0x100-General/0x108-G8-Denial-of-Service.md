@@ -16,7 +16,7 @@ Category “G8” lists requirements related to the possible denial of service o
 | **G8.3** | Verify that the business logic does not block its flows when any of the participants are absent forever. | 
 | **G8.4** | Verify that the contract logic does not disincentivize users to use contracts (e.g. the cost of the transaction is higher than the profit). | 
 | **G8.5** | Verify that expressions of functions *assert* or *require* have a passing variant. | 
-| **G8.6** | Verify that if *fallback* function is not callable by anyone, it is not blocking the functionalities of the contract |
+| **G8.6** | Verify that if *fallback* function is not callable by anyone, it is not blocking the functionalities of the contract. |
 | **G8.7** | Verify that there are no costly operations in a loop. | 
 | **G8.8** | Verify that there are no calls to untrusted contracts in a loop. | 
 | **G8.9** | Verify that if there is a possibility of suspending the operation of the contract, it is also possible to resume it. | 
