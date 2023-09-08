@@ -22,7 +22,7 @@ Category “I3” lists requirements related to the Oracle smart contract as one
 | **I3.5** | Verify that, the use a decentralized off-chain oracles unsusceptible to on-chain price manipulation attacks (e.g. Chainlink) is considered for low liquidity asset, ideally combining it with on-chain oracles to detect malicious values. |
 | **I3.6** | Verify that the value you are using has had enough time to be reported as invalid and has not been. |
 | **I3.7** | Verify that there is a check for stale prices when using Chainlink Oracle |
-| **I3.8** | Verify that there is a check for down l2 sequencer when using Chainlink Oracle  |
+| **I3.8** | Verify that there is a check for down L2 sequencer when using Chainlink Oracle.  |
 | **I3.9** | Verify that NOT the same heartbeat is used for multiple price feeds when using Chainlink Oracle |
 | **I3.10** | Verify that the code deals with different price feeds having different decimal precision when using Chainlink Oracle  |
 | **I3.11** | Verify that the price feed address wherever it is located(hardcoded, deployment script) is pointing to the correct oracle price feed |
