@@ -94,7 +94,7 @@ If you are an internal or external auditor of a protocol, you should schedule (a
     * [I1: Basic](<./2.0/0x300-Integrations/0x301-I1-Basic.md>)
     * [I2: Token](<./2.0/0x300-Integrations/0x302-I2-Token.md>)
     * [I3: Oracle](<./2.0/0x300-Integrations/0x303-I3-Oracle.md>)
-    * [I4: Bridge](<./2.0/0x300-Integrations/0x304-I4-Bridge.md>)
+    * [I4: Cross-Chain](<./2.0/0x300-Integrations/0x304-I4-Cross-Chain.md>)
 
 ## Severity of the risk
 
