@@ -20,6 +20,8 @@ Category “C3” lists requirements related to the Oracle smart contract as one
 | **C3.3** | Verify if there is a way to mark the data as incorrect. |
 | **C3.4** | Verify that the supply with incorrect data is penalized. |
 | **C3.5** | Verify that the value (e.g., price for an asset) returned by oracle cannot be influenced in a single block. |
+| **C3.6** | Verify that the chain Sequencer is operational, when using an oracle on a L2 network |
+| **C3.7** | Verify that the assumptions about the reported price's decimals are correct |
 
 ## References
 
