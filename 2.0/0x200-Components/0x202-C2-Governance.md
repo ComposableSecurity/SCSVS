@@ -25,10 +25,13 @@ Category “C2” lists requirements related to the Governance smart contract as
 | **C2.8** | Verify that the Governance cannot do more than declared in the documentation. |
 | **C2.9** | Verify that the ownership transfer is a 2-step process where the candidate accepts it in a separate transaction and the previous owner does not lose privileges until it is done. |
 | **C2.10** | Verify that key operations on the Governance contract can only be performed with the appropriate permissions. Functions in this contract should not be available to general users.|
+| **C2.11** | Verify that a process has been established whereby proposals that users will vote on are searched for suspicious functions (e.g., selfdestruct) and they are rejected or proceed with caution. |
+| **C2.12** | Verify that a process has been established whereby proposals that users will vote on are audited by external company. |
 
 ## References
 
 For more information, see also:
 
+* [Understanding the Tornado Cash Governance Attack](https://composable-security.com/blog/understanding-the-tornado-cash-governance-attack/)
 * [Strategies for Secure Governance with Smart Contracts](https://www.youtube.com/watch?v=GbDAmMdmh8Q)
 * [MakerDAO Governance Module](https://docs.makerdao.com/smart-contract-modules/governance-module)
