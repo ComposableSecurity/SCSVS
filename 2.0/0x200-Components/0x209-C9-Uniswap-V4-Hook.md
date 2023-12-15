@@ -81,5 +81,9 @@ Here's a clear breakdown of the interaction flow:
 
 ## References
 For more information, see also:
-* [Uniswap V4 hook audit](https://composable-security.com/contact/)
 * [Threats for UniswapV4 hooks](https://composable-security.com/blog/threats-for-uniswap-v-4-hooks/)
+* [Uniswap V4: Re-Initialization Leading to Funds Locked](https://composable-security.com/blog/uniswap-v-4-re-initialization-leading-to-funds-locked/)
+* [Uniswap v4 - threat modeling for secure integration](https://composable-security.com/blog/uniswap-v-4-threat-modeling-for-secure-integration/)
+* [GitHub:L Uniswap/v4-core](https://github.com/Uniswap/v4-core)
+* [Uniswap V4 Docs](https://docs.uniswapfoundation.org/)
+* [Uniswap V4 by Example](https://www.v4-by-example.org/)
