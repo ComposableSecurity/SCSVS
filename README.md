@@ -90,6 +90,7 @@ If you are an internal or external auditor of a protocol, you should schedule (a
     * [C6: NFT](<./2.0/0x200-Components/0x206-C6-NFT.md>)
     * [C7: Liquid staking](<./2.0/0x200-Components/0x207-C7-Liquid-staking.md>)
     * [C8: Liquidity pool](<./2.0/0x200-Components/0x208-C8-Liquidity-pool.md>)
+    * [C9: Uniswap V4 Hook](<./2.0/0x200-Components/0x209-C9-Uniswap-V4-Hook.md>)
 * I: Integrations
     * [I1: Basic](<./2.0/0x300-Integrations/0x301-I1-Basic.md>)
     * [I2: Token](<./2.0/0x300-Integrations/0x302-I2-Token.md>)
