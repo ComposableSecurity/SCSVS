@@ -31,3 +31,8 @@ For more information, see also:
 * [Token Implementation Best Practice](https://consensys.github.io/smart-contract-best-practices/tokens/)
 * [iToken Duplication Incident Report](https://bzx.network/blog/incident)
 * [The Dangers of Token Integration](https://www.youtube.com/watch?v=6GaCt_lM_ak)
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**

@@ -25,3 +25,8 @@ Category “C8” lists requirements related to the liquidity pool smart contrac
 ## References
 For more information, see also:
 * [How do LIQUIDITY POOLS work?](https://www.youtube.com/watch?v=cizLhxSKrAc)
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**

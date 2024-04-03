@@ -40,3 +40,7 @@ For more information, see also:
 * [Emergency Procedures - Yearn Finance](https://docs.yearn.finance/vaults/0.4.2/process-and-procedures/emergency)
 * [Emergency tools - Yearn Finance](https://docs.yearn.finance/vaults/0.4.2/process-and-procedures/emergency#tools)
 * [Emergency checklist - Yearn Finance](https://docs.yearn.finance/vaults/0.4.2/process-and-procedures/emergency#emergency-checklist)
+
+## Security consultation
+
+Consult your policies with the SCSVS authors. **[Contact a specialist](https://composable-security.com/contact/)**.
