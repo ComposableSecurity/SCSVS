@@ -32,3 +32,8 @@ For more information, see also:
 * [So you want to use a price oracle](https://samczsun.com/so-you-want-to-use-a-price-oracle/)
 * [Pricing LP tokens | Warp Finance hack](https://cmichel.io/pricing-lp-tokens/)
 * [Uniswap V3 tick price manipulation](https://medium.com/@hacxyk/we-rescued-4m-from-rari-capital-but-was-it-worth-it-39366d4d1812)
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**

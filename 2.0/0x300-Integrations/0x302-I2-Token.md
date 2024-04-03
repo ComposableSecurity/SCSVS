@@ -41,3 +41,8 @@ For more information, see also:
 * [iToken Duplication Incident Report](https://bzx.network/blog/incident)
 * [The Dangers of Surprising Code](https://samczsun.com/the-dangers-of-surprising-code/)
 * [ERC20 standard peculiarities](https://github.com/d-xo/weird-erc20)
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**

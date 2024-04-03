@@ -30,3 +30,8 @@ For more information, see also:
 * [Chainlink VRF](https://docs.chain.link/vrf/v2/introduction/)
 * [Unencrypted Private Data On-Chain](https://swcregistry.io/docs/SWC-136)
 * [Homoglyph attack](https://github.com/Arachnid/uscc/tree/master/submissions-2017/marcogiglio)
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**

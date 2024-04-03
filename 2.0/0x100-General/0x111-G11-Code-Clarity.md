@@ -35,3 +35,8 @@ For more information, see also:
 
 * [Solidity Style Guide](https://docs.soliditylang.org/en/latest/style-guide.html)
 * [Solidity: Security Considerations & Recommendations](https://solidity.readthedocs.io/en/v0.5.10/security-considerations.html#recommendations)
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**

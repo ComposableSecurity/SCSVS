@@ -44,3 +44,7 @@ For more information, see also:
 * [NIST SP 800-57](https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-4/final)
 * [Use events to monitor contract activity](https://consensys.github.io/smart-contract-best-practices/recommendations/#use-events-to-monitor-contract-activity)
 * [An example of superseded contract - EIP 1820](https://eips.ethereum.org/EIPS/eip-1820)
+
+## Security consultation
+
+Consult your architecture with the SCSVS authors. **[Contact a specialist](https://composable-security.com/contact/)**.

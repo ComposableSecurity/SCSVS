@@ -32,3 +32,8 @@ For more information, see also:
 * [Securify](https://securify.chainsecurity.com/)
 * [SmartCheck](https://tool.smartdec.net/)
 * [Oyente](https://github.com/melonproject/oyente)
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**

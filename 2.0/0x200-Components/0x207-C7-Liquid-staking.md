@@ -44,3 +44,8 @@ For more information, see also:
 * [Distributed Validators: Improving Staking No Matter Your ETH Balance](https://www.youtube.com/watch?v=zSt6McTVNVE)
 * [MAXIMAL EXTRACTABLE VALUE (MEV)](https://ethereum.org/en/developers/docs/mev/)
 * [Proof of Stake FAQ](https://vitalik.ca/general/2017/12/31/pos_faq.html#how-does-validator-selection-work-and-what-is-stake-grinding)
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**

@@ -43,3 +43,8 @@ For more information, see also:
 * [Learn EVM attacks - Bridges](https://github.com/coinspect/learn-evm-attacks#bridges)
 * [Awesome Interoperability - bridges](https://docs.nomad.xyz/resources/awesome-interoperability)
 * [PolyNetwork hack - privilege escalation via cross-chain call](https://research.kudelskisecurity.com/2021/08/12/the-poly-network-hack-explained/)
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**

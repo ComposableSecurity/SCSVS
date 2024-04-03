@@ -33,3 +33,8 @@ Category “I1” lists requirements related to each integration with any smart 
 For more information, see also:
 
 * TODO
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**

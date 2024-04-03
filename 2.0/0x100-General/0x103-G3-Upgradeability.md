@@ -36,3 +36,8 @@ For more information, see also:
 * [Chainlink upgradable smart contracts](https://blog.chain.link/upgradable-smart-contracts/)
 * [Contract upgrade anti-patterns](https://blog.trailofbits.com/2018/09/05/contract-upgrade-anti-patterns)
 * [Security in Upgrades of Smart Contracts](https://www.youtube.com/watch?v=5WE6PEc305w)
+
+## Smart contract audit
+
+Request an audit of your project by SCSVS authors.
+**[Contact a specialist](https://composable-security.com/contact/).**
