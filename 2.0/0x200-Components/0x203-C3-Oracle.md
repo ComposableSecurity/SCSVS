@@ -20,6 +20,9 @@ Category “C3” lists requirements related to the Oracle smart contract as one
 | **C3.3** | Verify if there is a way to mark the data as incorrect. |
 | **C3.4** | Verify that the supply with incorrect data is penalized. |
 | **C3.5** | Verify that the value (e.g., price for an asset) returned by oracle cannot be influenced in a single block. |
+| **C3.6** | Verify that consumers of the oracle's data are able to reject stale answers using a documented heartbeat / `updatedAt` threshold. |
+| **C3.7** | Verify that the oracle exposes the decimals of its answer and that consumers normalize across feeds of different decimals before arithmetic. |
+| **C3.8** | Verify that the oracle exposes minimum/maximum bounds (or the consumer documents the underlying feed's bounds) and consumers handle clamping events (LUNA/UST-style crashes against Chainlink min answer). |
 
 ## References
 

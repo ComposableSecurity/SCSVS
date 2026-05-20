@@ -12,7 +12,6 @@ Category “G8” lists requirements related to the possible denial of service o
 | # | Description |
 | --- | --- |
 | **G8.1** | Verify that the contract does not iterate over unbound loops.  | 
-| **G8.2** | Verify that self-destruct functionality is used only if necessary.  If it is included in the contract, it should be clearly described in the documentation. | 
 | **G8.3** | Verify that the business logic does not block its flows when any of the participants are absent forever. | 
 | **G8.4** | Verify that the contract logic does not disincentivize users to use contracts (e.g. the cost of the transaction is higher than the profit). | 
 | **G8.5** | Verify that expressions of functions *assert* or *require* have a passing variant. | 
@@ -22,6 +21,10 @@ Category “G8” lists requirements related to the possible denial of service o
 | **G8.9** | Verify that if there is a possibility of suspending the operation of the contract, it is also possible to resume it. | 
 | **G8.10** | Verify that if allow lists and deny lists are used, it does not interfere with the normal operation of the system. | 
 | **G8.11** | Verify that there is no DoS caused by overflows and underflows. | 
+| **G8.12** | Verify that the contract tolerates forced ETH transfers (via `selfdestruct`, `coinbase`, or block reward) without breaking accounting invariants. |
+| **G8.13** | Verify that loops over user-influenced arrays (claimers, voters, batched recipients) have a hard cap or pagination that fits within block gas limits on every supported chain. |
+| **G8.14** | Verify that signature-replay protections (e.g. EIP-2612 permit nonces) cannot be front-run by an attacker to grief a victim's intended transaction. |
+| **G8.15** | Verify that L2 deployments tolerate sequencer downtime: critical user actions (withdrawals, liquidations) must remain reachable via L1 forced inclusion or equivalent. |
 
 ## References
 

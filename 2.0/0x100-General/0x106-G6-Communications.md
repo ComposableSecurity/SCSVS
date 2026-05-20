@@ -14,15 +14,18 @@ Category “G6” lists requirements related to the function calls between the v
 
 | # | Description |
 | --- | --- |
-| **G6.1** | Verify that libraries that are not part of the application (but the smart contract relies on to operate) are identified. | 
-| **G6.2** | Verify that *delegatecall* is not used with untrusted contracts. | 
-| **G6.3** | Verify that third-party contracts do not shadow special functions (e.g. *revert*). | 
-| **G6.4** | Verify that the contract does not check whether the address is a contract using *extcodesize* opcode. | 
-| **G6.5** | Verify that re-entrancy attack is mitigated by blocking recursive calls from other contracts (e.g., *Checks-Effect-Interactions*, *ReentrancyGuard*). | 
-| **G6.6** | Verify that the result of low-level function calls (e.g. *send*, *delegatecall*, *call*) from another contracts is checked. | 
-| **G6.7** | Verify that contract relies on the data provided by the right sender and the contract does not rely on *tx.origin* value. | 
+| **G6.1** | Verify that libraries that are not part of the application (but the smart contract relies on to operate) are identified. |
+| **G6.2** | Verify that *delegatecall* is not used with untrusted contracts (i.e. targets are either immutable, set behind a timelock, or restricted to an allowlist of audited contracts). |
+| **G6.4** | Verify that the contract does not check whether the address is a contract using *extcodesize* opcode. |
+| **G6.5** | Verify that re-entrancy attack is mitigated by blocking recursive calls from other contracts (e.g., *Checks-Effect-Interactions*, *ReentrancyGuard*). |
+| **G6.6** | Verify that the result of low-level function calls (e.g. *send*, *delegatecall*, *call*) from another contracts is checked. |
+| **G6.7** | Verify that contract relies on the data provided by the right sender and the contract does not rely on *tx.origin* value. |
 | **G6.8** | Verify that contract does not enforce usage of "phantom functions". |
 | **G6.9** | Verify that contract does not accept Ether transfers (e.g. via fallback or receive) that cannot be withdrawn. |
+| **G6.10** | Verify that read-only reentrancy is mitigated: view functions used by other protocols cannot be queried mid-execution while internal state is inconsistent. |
+| **G6.11** | Verify that `try/catch` is used around external calls when failure must not revert the caller, and that out-of-gas, return-bomb, and revert-with-arbitrary-data cases are all handled. |
+| **G6.12** | Verify that ERC-2771 trusted-forwarder integrations correctly resolve `_msgSender()` and `_msgData()` and cannot be spoofed by an untrusted forwarder. |
+| **G6.13** | Verify that transient-storage-based reentrancy locks (EIP-1153) account for nested calls into the same contract and are cleared even on revert paths. |
 
 
 ## References

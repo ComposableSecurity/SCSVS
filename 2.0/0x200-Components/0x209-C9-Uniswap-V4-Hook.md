@@ -66,6 +66,9 @@ Here's a clear breakdown of the interaction flow:
 | **C9.29** | Verify that the `PoolOperator` does not use malicious routes during swaps, which could result in swapping legitimate tokens for fake ones. |
 | **C9.30** | Verify that the hook prevents overflows or underflows in calculations. |
 | **C9.31** | Verify that users cannot bypass business limits, such as liquidity withdrawal time locks. |
+| **C9.32** | Verify that the hook reconciles all currency deltas in `unlockCallback` (no residual positive or negative deltas) and that transient-storage accounting (EIP-1153) is cleared on every return path, including reverts. |
+| **C9.33** | Verify that the hook's `beforeSwap`/`afterSwap` return values (deltas, dynamic fees) are bounded so they cannot be set to values that break PoolManager accounting. |
+| **C9.34** | Verify that the hook's interaction with NoOp hooks (`beforeSwapReturnDelta`, `afterAddLiquidityReturnDelta`, etc.) does not allow LPs or swappers to extract value beyond what they contributed. |
 
 ### Denial of Service 
 
@@ -89,6 +92,7 @@ Here's a clear breakdown of the interaction flow:
 | **C9.G.3** | Verify that the hook cannot set high dynamic fees by front-running the user. |
 | **C9.G.4** | Verify that the hook cannot set high withdrawal fees by front-running the withdrawal. |
 | **C9.G.5** | Verify that the hook has no special administrative functions (if explicitly specified otherwise, make sure the privileged roles cannot make immediate, drastic changes to its functionality). |
+| **C9.G.6** | Verify that hook-controlled configuration parameters (dynamic fee curves, allowed currencies, internal oracles) are bounded and timelocked. |
 
 ## References
 For more information, see also:

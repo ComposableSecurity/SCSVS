@@ -17,12 +17,19 @@ Category “I4” lists requirements related to the smart contracts that make ca
 | --- | --- |
 | **I4.1** | Verify that the security checklist provided by the bridge developers team is covered. |
 | **I4.2** | Verify that cross-chain call waits for specific number of confirmations before it is transferred to the destination chain and confirmed there. |
-| **I4.3** | Verify that the protocol uses production-ready examples of code prepared by the bridge developers team. | 
-| **I4.4** | Verify that the payload (or other kind of cross-chained message) is encoded securely, using `abi.encode`. Use custom encoding (`abi.encodePacked`) only if you need deep optimization and you know what you are doing. | 
-| **I4.5** | Verify that the sizes of the destination addresses used in the cross-chained message are verified on the source chain. | 
-| **I4.6** | Verify that the cross-chain transfer to zero address will revert if the token uses OpenZeppelin's ERC20 on destination chain, because it reverts on mints to zero address. | 
+| **I4.3** | Verify that the protocol uses production-ready examples of code prepared by the bridge developers team. |
+| **I4.4** | Verify that the payload (or other kind of cross-chained message) is encoded securely, using `abi.encode`. Use custom encoding (`abi.encodePacked`) only if you need deep optimization and you know what you are doing. |
+| **I4.5** | Verify that the sizes of the destination addresses used in the cross-chained message are verified on the source chain. |
+| **I4.6** | Verify that the cross-chain transfer to zero address will revert if the token uses OpenZeppelin's ERC20 on destination chain, because it reverts on mints to zero address. |
+| **I4.7** | Verify that cross-chain message handlers are idempotent: a duplicated delivery cannot mint, transfer, or update state twice. |
+| **I4.8** | Verify that cross-chain integrations explicitly document and verify the source chain ID and source contract address of every inbound message; the off-chain transport (LayerZero, CCIP, Axelar, Wormhole, Hyperlane) is not relied upon as the sole authority. |
+| **I4.9** | Verify that cross-chain integrations apply per-message and per-time-window rate limits / circuit breakers on the destination side. |
+| **I4.10** | Verify that cross-chain integrations handle message-execution failure with a documented recovery path (replay, refund, manual quarantine) and that this path cannot itself be abused to double-execute. |
+| **I4.11** | Verify that gas/fee parameters for outbound cross-chain messages are configurable per call, not hardcoded, and that refund addresses are passed through securely. |
+| **I4.12** | Verify that Chainlink CCIP integrations enable the Risk Management Network "off-switch" awareness and handle the `curseCall` / paused-lane state without locking user funds. |
+| **I4.13** | Verify that Wormhole/Axelar/Hyperlane verifications check both the emitter chain ID and emitter address, and that the VAA/message hash cannot be replayed. |
 
-### Security Requirements for Integration with LayerZero 
+### Security Requirements for Integration with LayerZero
 
 | # | Description |
 | --- | --- |
@@ -30,24 +37,20 @@ Category “I4” lists requirements related to the smart contracts that make ca
 | **I4.LZ.2** | Verify that the message sender (msg.sender) of ONFT cross-transfer is approved to transfer NFT token or is its owner. |
 | **I4.LZ.3** | Verify that the `_from` address (in `_debitFrom` function) specified in the ONFT cross-transfer is the owner of transfered NFT token. |
 | **I4.LZ.4** | Verify that the inbound and outbound block confirmation numbers have been set with care, assuming the possible reorg depths on particular chains. |
-| **I4.LZ.5** | Verify that the function calls on the destination chain are try-catched and retryable, unless you are builing a blocking application on purpose. |
-| **I4.LZ.6** | Verify that the UA's owner (ideally multi-sig) is able to call `forceResumeReceive` on the LZ endpoint to unblock the cross-chain channel and protect from DoS. |
 | **I4.LZ.7** | Verify that the LayerZero cross-chain call parameters are not hardcoded and can be passed in the function call. That includes: `zroPaymentAddress`, `adapterParams`, `refundAddress`, `useZro`. |
-| **I4.LZ.8** | Verify that the User Application implementation is able to call the configuration functions on the LZ endpoint (covered if UA inherits from `LzApp`). |
 | **I4.LZ.9** | Verify that the User Application has been configured by the protocol or the protocol excplictly accepts the default configuration. |
-| **I4.LZ.10** | Verify that the protocol uses production-ready examples of code prepared by LayerZero team for specific usages (e.g. `OFT`, `ONFT`, `LzApp`, `NonBlockingLzApp`). |
-| **I4.LZ.11** | Verify that the protocol uses `solidity-examples` package to import LayerZero contracts and does not copy-paste them directly from the repository. |
-| **I4.LZ.12** | Verify that the token briding protocol uses `OFT` contract for new tokens and `ProxyOFT` contract for existing tokens. |
-| **I4.LZ.13** | Verify that, when using `LzApp`, the implementation uses `_lzSend` function instead of calling `lzEnpoint.send` function directly. |
-| **I4.LZ.14** | Verify that, when using `LzApp`, the implementation does not check the same requirements again (using `require` function). |
-
-
-
+| **I4.LZ.15** | Verify that the integration inherits from the official `OApp` / `OFT` / `OFTAdapter` base contracts from `@layerzerolabs/lz-evm-oapp-v2` and does not re-implement endpoint plumbing manually. |
+| **I4.LZ.16** | Verify that the protocol explicitly sets its send/receive library and its DVN/Executor configuration on the endpoint, rather than relying on LayerZero defaults. |
+| **I4.LZ.17** | Verify that the protocol's DVN set has a threshold of at least two independent DVNs and that no single DVN can unilaterally deliver a message. |
+| **I4.LZ.18** | Verify that `_lzReceive` overrides validate `_origin.srcEid` and `_origin.sender` against the protocol's own peer mapping before any state change. |
+| **I4.LZ.19** | Verify that `setPeer` and configuration calls on `OApp` are restricted to a multisig/timelock and emit events. |
+| **I4.LZ.20** | Verify that `lzReceive` execution gas is sized using `enforcedOptions` / `combineOptions` and cannot be exhausted by a malicious composer. |
+| **I4.LZ.21** | Verify that `lzCompose` composer integrations validate the source OApp address and message origin before processing. |
 
 ## References
 
 For more information, see also:
-* [LayerZero Integration Checklist](https://layerzero.gitbook.io/docs/evm-guides/layerzero-integration-checklist) 
+* [LayerZero Integration Checklist](https://layerzero.gitbook.io/docs/evm-guides/layerzero-integration-checklist)
 * [LayerZero: Best Practice](https://layerzero.gitbook.io/docs/evm-guides/best-practice)
 * [LayerZero from First Principles](https://medium.com/@PrimordialAA/layerzero-from-first-principles-c2393eb1718d)
 * [LayerZero: OFTV2](https://layerzero.gitbook.io/docs/evm-guides/layerzero-omnichain-contracts/oft/oftv2)

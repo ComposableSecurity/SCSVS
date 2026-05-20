@@ -32,6 +32,10 @@ Category “C7” lists requirements related to the liquid staking smart contrac
 | **C7.15** | Verify that if the positive rebases affect requests in the queue, it is only to the point where rebases compensate for previously accrued penalties and don’t push the redemption rate higher than it was at the moment of the withdrawal request’s creation. |
 | **C7.16** | Verify that there is an established mechanism for selecting and ejecting validators in the event of unstake to recover the 32 ETH entrusted to the operator. |
 | **C7.17** | Verify that there is a mechanism to rotate withdrawal credentials. |
+| **C7.18** | Verify that the LST/LRT share-price (exchange rate) is protected against donation/inflation attacks on first deposit. |
+| **C7.19** | Verify that re-staking integrations (e.g. EigenLayer AVSs) explicitly account for the cumulative slashing risk introduced by each AVS and surface that risk to depositors. |
+| **C7.20** | Verify that the exchange-rate update path cannot be front-run to extract value during oracle/rebase transitions (e.g. flashloan-deposit-then-redeem across the rebase boundary). |
+| **C7.21** | Verify that MEV captured by validators (block proposals, MEV-Boost relays) is distributed by the documented policy and cannot be redirected by a single operator. |
 
 
 ## References

@@ -21,12 +21,16 @@ Category “G3” lists requirements related to the upgradeability of the smart 
 | **G3.4** | Verify that *initialize()* can only be called once. |
 | **G3.5** | Verify that *initialize()* can only be called by an authorized role through appropriate modifiers (e.g. *initializer*, *onlyOwner*) or it is called within the same function call, right after deployment. |
 | **G3.6** | Verify if the update process is done in one transaction or the update functions are authorized so that no one can front-run it. |
-| **G3.7** | Verify that upgradeable contracts have reserved gap on slots to prevent overwriting. |
-| **G3.8** | Verify that the number of reserved (as a gap) slots has been reduced appropriately if new variables have been added. |
+| **G3.8** | Verify that the number of reserved (as a gap) slots has been reduced appropriately if new variables have been added and previous version used simple storage with gaps. |
 | **G3.9** | Verify that there are no changes in the order in which the contract state variables are declared, nor their types. |
 | **G3.10** | Verify if the new values returned by the functions are the same as in the previous version of the contract (e.g. *owner()*, *balanceOf(address)*). |
 | **G3.11** | Verify that the implementation is initialized. |
 | **G3.12** | Verify that the implementation can't be destroyed. |
+| **G3.13** | Verify that storage-layout compatibility between implementations is checked automatically (e.g. OpenZeppelin Upgrades plugin, `forge inspect storage-layout`) before every upgrade. |
+| **G3.14** | Verify that ERC-7201 namespaced storage layout is used for new upgradeable contracts to eliminate gap/slot-collision risks. |
+| **G3.15** | Verify that the proxy uses ERC-1967 standard storage slots and that the proxy admin cannot accidentally call into the implementation's selectors (transparent-proxy admin clash). |
+| **G3.16** | Verify that upgrades are gated by a timelock with a publicly disclosed minimum delay long enough for users to exit. |
+| **G3.17** | Verify that immutables and constants in the new implementation reproduce or intentionally migrate the values of the previous implementation. |
 
 ## References
 

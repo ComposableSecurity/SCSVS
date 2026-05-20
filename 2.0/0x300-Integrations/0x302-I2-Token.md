@@ -29,6 +29,11 @@ Category “I2” lists requirements related to the Token smart contract as one 
 | **I2.12** | Verify that the contract reverts on failed transfer. |
 | **I2.13** | Verify that the protocol handles double-entry tokens (tracking user balances in a contract represented by two addresses) correctly or forbids them. |
 | **I2.14** | Use OpenZeppelin's SafeERC20 for interacting with ERC20 tokens. |
+| **I2.15** | Verify that integrations with rebasing tokens (stETH, USDM, AMPL) either correctly track share-based balances or explicitly reject such tokens at the allowlist level. |
+| **I2.16** | Verify that integrations with low-decimal tokens (USDC=6, GUSD=2, WBTC=8) do not lose precision and do not allow share/asset price griefing through dust amounts. |
+| **I2.17** | Verify that integrations tolerate tokens that revert on zero-value transfers or on transfers to the zero address. |
+| **I2.18** | Verify that the project monitors blocklist/sanctions actions by issuers of permissioned tokens (USDC, USDT, BUSD) and has a documented response if a protocol-held address is blocklisted. |
+| **I2.19** | Verify that EIP-2612 `permit` calls into untrusted tokens are wrapped in `try/catch`, because not all tokens implement `permit` and some implementations are malicious. |
 
 ## References
 

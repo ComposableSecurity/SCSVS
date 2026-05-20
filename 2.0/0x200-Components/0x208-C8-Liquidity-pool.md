@@ -20,6 +20,11 @@ Category “C8” lists requirements related to the liquidity pool smart contrac
 | **C8.3** | Verify that the tokens used by the pools are from the predefined accepted list of addresses determined by the DAO. |
 | **C8.4** | Verify that the user is informed and aware about the risks associated with the use of a pool that allows the use of any tokens. |
 | **C8.5** | Verify that there are sufficient checks to ensure liquidity availability. |
+| **C8.6** | Verify that the pool is protected against the first-depositor inflation attack on initial LP shares (e.g. burn minimum liquidity, virtual reserves, deployer seed). |
+| **C8.7** | Verify that swap and liquidity-modification functions accept a `minAmountOut` / `minLiquidity` and a `deadline` parameter, and revert when not met. |
+| **C8.8** | Verify that pool fees and dynamic-fee parameters have hard maximum bounds enforced in code, not only by governance discipline. |
+| **C8.9** | Verify that price-impacting state (reserves, oracle observations) cannot be manipulated and read in the same block by an attacker integrating against the pool. |
+| **C8.10** | Verify that single-sided withdrawals or imbalanced operations cannot push the pool into a state where the invariant (e.g. constant-product, StableSwap) is violated. |
 
 
 ## References

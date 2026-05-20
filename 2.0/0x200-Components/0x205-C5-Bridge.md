@@ -28,6 +28,11 @@ Category “C5” lists requirements related to the Bridge smart contract as one
 | **C5.12** | Verify that bridge disregards calls originating from different function than designed. |
 | **C5.13** | Verify that bridge requires adequate amount of fees to process the message. |
 | **C5.14** | Verify that the maximum gas consumption for relayed messages is limited or fully backed by sender (e.g., in terms of fee). |
+| **C5.15** | Verify that signature schemes used by validators/relayers reject malleable signatures (canonical low-`s`, EIP-2 enforcement) and treat EIP-2098 compact signatures consistently. |
+| **C5.16** | Verify that EIP-1271 contract-signer verification is supported wherever EOA signers are accepted, and that the verifier is robust against malicious EIP-1271 implementations (read-only reentrancy, arbitrary gas consumption). |
+| **C5.17** | Verify that quorum/threshold parameters cannot be lowered atomically with a malicious message in the same block (parameter changes are time-locked). |
+| **C5.18** | Verify that minted/released amounts on the destination chain are bounded by accounting reconciled with the source chain (e.g. cumulative-locked = cumulative-minted) to limit blast radius of a validator compromise. |
+| **C5.19** | Verify that the bridge has rate limits and circuit breakers on the destination side and that they cannot be bypassed by message ordering. |
 
 ## References
 For more information, see also:

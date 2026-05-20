@@ -26,6 +26,12 @@ Category “C4” lists requirements related to the Vault smart contract as one 
 | **C4.9** | Verify that the transferred amount is confirmed by checking balances before and after the deposit if the vault is going to support fee-on-transfer tokens (or any token is allowed). |
 | **C4.10** | Verify that the vault is allowed to transfer tokens only from *msg.sender* to prohibit stealing from users who approved the vault contract. |
 | **C4.11** | Verify that the deposit and withdraw business logic is consistent and symmetrical, especially when re-sending tokens to the same address (*from* == *to*). |
+| **C4.12** | Verify that the vault is protected against the first-depositor inflation/donation attack on ERC-4626 share price (virtual shares/offset, dead-share seed, or initial deployer deposit). |
+| **C4.13** | Verify that zero-asset deposits and zero-share mints either revert or are otherwise handled to prevent share-price griefing. |
+| **C4.14** | Verify that ERC-4626 `previewDeposit` / `previewMint` / `previewWithdraw` / `previewRedeem` match the result of the corresponding state-changing call in the same block. |
+| **C4.15** | Verify that ERC-4626 `maxDeposit` / `maxMint` / `maxWithdraw` / `maxRedeem` accurately reflect operational limits including pauses, caps, and assets temporarily held by strategies. |
+| **C4.16** | Verify that share-price calculations account for assets deployed in external strategies, including pending losses, and not just idle vault balance. |
+| **C4.17** | Verify that strategy migrations cannot trap user funds and that emergency withdrawal paths bypass the strategy if it is compromised. |
 
 
 ## References

@@ -31,6 +31,11 @@ Category “G1” lists requirements related to the architecture, design and thr
 | **G1.14** | Verify that there is a component that monitors contract activity using events. |
 | **G1.15** | Verify that the threat model includes whale transactions. |
 | **G1.16** | Verify that the leakage of one person's private key does not compromise the security of the entire project. |
+| **G1.17** | Verify that the threat model includes MEV (sandwich, back-running, oracle MEV) and mitigations are documented. |
+| **G1.18** | Verify that the threat model considers L2-specific risks (sequencer downtime/censorship, forced-inclusion delays, L1<->L2 message replays, cross-domain `msg.sender` aliasing). |
+| **G1.19** | Verify that the threat model considers EIP-7702 delegated EOAs, ERC-4337 account-abstraction wallets, and ERC-1271 contract signatures wherever user authentication is performed. |
+| **G1.20** | Verify that the threat model considers transient storage (EIP-1153) usage, including nested-call interactions and cross-function reentrancy via transient locks. |
+| **G1.21** | Verify that the threat model considers atomic composability with flash loans, flash mints, and just-in-time liquidity. |
 
 ## References
 

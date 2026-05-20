@@ -24,6 +24,11 @@ Category “G5” lists requirements related to the access control mechanisms of
 | **G5.8** | Verify that the access controls fail securely, including when a revert occurs. | 
 | **G5.9** | Verify that if the input (function parameters) is validated, the positive validation approach (allowlisting) is used where possible. | 
 | **G5.10** | Verify that passing privileged access to another address is two-step operation. |
+| **G5.11** | Verify that every role grant, revocation, and admin change emits an event, and that grants to high-impact roles are time-locked. |
+| **G5.12** | Verify that `DEFAULT_ADMIN_ROLE` (or equivalent root role) cannot be renounced unintentionally and is held by a multisig or DAO, never by an EOA in production. |
+| **G5.13** | Verify that privileged functions reject calls made through `delegatecall` when this is not the intended invocation path (e.g. by checking `address(this) == __self`). |
+| **G5.14** | Verify that integrations with EIP-7702 delegated EOAs and ERC-4337 smart accounts still resolve `msg.sender` to the entity the access-control logic expects. |
+| **G5.15** | Verify that signature-gated access uses EIP-712 typed data with a domain separator bound to chain ID and contract address. |
 
 ## References
 

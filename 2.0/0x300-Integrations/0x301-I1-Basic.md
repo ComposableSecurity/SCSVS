@@ -27,6 +27,10 @@ Category “I1” lists requirements related to each integration with any smart 
 | **I1.11** | Verify that the external contracts (even trusted) that are allowed to change the attributes of the smart contract (e.g., token price) have the following limitations implemented: a threshold for the change (e.g. no more/less than 5%) and a limit of updates (e.g., one update per day). |
 | **I1.12** | Verify that the address called via low-level call/delegatecall/staticcall exists (it will return *true* if the contract does not exist). |
 | **I1.13** | Verify that all interfaces are added to the mapping if *ERC-165 Standard Interface Detection* is used. |
+| **I1.14** | Verify that integrations resolve `msg.sender` correctly when the caller is an EIP-7702 delegated EOA or an ERC-4337 smart account, and do not assume `tx.origin == msg.sender == EOA`. |
+| **I1.15** | Verify that integrations with externally upgradeable contracts subscribe to upgrade-event notifications and have a procedure to pause the integration if a malicious upgrade is detected. |
+| **I1.16** | Verify that interface compatibility (function selectors, return types, event signatures) of the integrated contract is asserted at integration time (e.g. ERC-165 probe, bytecode hash check) and not assumed. |
+| **I1.17** | Verify that integrations with external contracts handle return-bomb, arbitrary-revert-data, and unbounded-gas-consumption behaviors using `excessivelySafeCall` or equivalent. |
 
 ## References
 

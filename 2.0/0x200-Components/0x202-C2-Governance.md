@@ -16,7 +16,7 @@ Category “C2” lists requirements related to the Governance smart contract as
 | # | Description |
 | --- | --- |
 | **C2.1** | Verify that Governance contract follows tested and stable Governance standards. |
-| **C2.2** | (DAO) Verify that the governance contract is protected from the attacks that use flash loans. |
+| **C2.2** | (DAO) Verify that voting power is sampled at a past snapshot block (e.g. ERC-20Votes checkpoint) so that flash-loaned or borrowed tokens cannot influence votes. |
 | **C2.3** | (DAO) Verify that the votes over taking actions by governance are counted correctly, following the documentation.  |
 | **C2.4** | (DAO) Verify that the delays associated with the enforcement of actions are consistent with those described in the documentation. |
 | **C2.5** | (DAO) Verify that the actions can only be performed after voting is completed (unless explicitly stated otherwise in the documentation).
@@ -27,6 +27,11 @@ Category “C2” lists requirements related to the Governance smart contract as
 | **C2.10** | Verify that key operations on the Governance contract can only be performed with the appropriate permissions. Functions in this contract should not be available to general users.|
 | **C2.11** | Verify that a process has been established whereby proposals that users will vote on are searched for suspicious functions (e.g., selfdestruct) and they are rejected or proceed with caution. |
 | **C2.12** | Verify that a process has been established whereby proposals that users will vote on are audited by external company. |
+| **C2.13** | Verify that the protocol treats vote-buying / bribery markets as a documented threat and that critical parameter changes (oracles, upgrade keys, fee receivers) require additional safeguards beyond a single vote (e.g. timelock with veto). |
+| **C2.14** | Verify that the governance contract enforces minimum participation (quorum) and that quorum cannot be reached by a single privileged delegate without explicit design intent. |
+| **C2.15** | Verify that vote delegation cannot be used to double-count voting power (no transfer-then-delegate-back loops within a single proposal). |
+| **C2.16** | Verify that proposal execution is atomic: a single failing action in a multi-call proposal reverts the entire batch. |
+| **C2.17** | Verify that quorum/threshold parameters cannot be lowered atomically with a malicious message in the same block (parameter changes are time-locked). |
 
 ## References
 

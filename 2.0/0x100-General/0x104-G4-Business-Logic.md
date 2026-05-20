@@ -16,13 +16,13 @@ Category “G4” lists requirements related to the business logic of the smart 
 
 | # | Description |
 | --- | --- |
-| **G4.1** | Verify that the contract logic and protocol parameters implementation corresponds to the documentation. | 
-| **G4.2** | Verify that the business logic flows of smart contract proceed in a sequential step order, and it is not possible to skip any part of it or to do it in a different order than designed.  | 
-| **G4.3** | Verify that the contract has business limits and correctly enforces them. | 
-| **G4.4** | Verify that the business logic of contract does not rely on the values retrieved from untrusted contracts (especially when there are multiple calls to the same contract in one flow). | 
-| **G4.5** | Verify that the contract logic does not rely on the balance of contract (e.g., *balance == 0*). | 
-| **G4.6** | Verify that the sensitive operations of contract do not depend on the block data (e.g., *block hash*, *timestamp*) in an exploitable manner. | 
-| **G4.7** | Verify that the contract uses mechanisms that mitigate transaction-ordering dependence (front-running) attacks (e.g. pre-commit scheme). | 
+| **G4.1** | Verify that the contract logic and protocol parameters implementation corresponds to the documentation. |
+| **G4.2** | Verify that the business logic flows of smart contract proceed in a sequential step order, and it is not possible to skip any part of it or to do it in a different order than designed.  |
+| **G4.3** | Verify that the contract has business limits and correctly enforces them. |
+| **G4.4** | Verify that the business logic of contract does not rely on the values retrieved from untrusted contracts (especially when there are multiple calls to the same contract in one flow). |
+| **G4.5** | Verify that the contract logic does not rely on the balance of contract (e.g., *balance == 0*). |
+| **G4.6** | Verify that the sensitive operations of contract do not depend on the block data (e.g., *block hash*, *timestamp*) in an exploitable manner. |
+| **G4.7** | Verify that the contract uses mechanisms that mitigate transaction-ordering dependence (front-running) attacks (e.g. pre-commit scheme). |
 | **G4.8** | Verify that the contract does not send funds automatically, but it lets users withdraw funds on their own in the separate transaction instead. |
 | **G4.9** | Verify that the functions are built symmetrically (e.g. in the case of a *deposit*, there is also a *withdraw*). |
 | **G4.10** | Verify that calling a function once with value XY gives a similar result as calling it X times with value Y. |
@@ -30,6 +30,10 @@ Category “G4” lists requirements related to the business logic of the smart 
 | **G4.12** | Verify that when accepting ETH deposits directly and indirectly via WETH, you are validating the case of msg.value > 0 and the amount of WETH transferred in the same function call. |
 | **G4.13** | Verify that there are no off-by one errors, especially with *>=*, *<=* and *length - 1*. |
 | **G4.14** | Verify that string length in ABI decoded data is the same as declared one and there is an upper limit on the length of a string that can be passed to prevent run out of gas. |
+| **G4.15** | Verify that signature-authorized actions (permits, meta-transactions, gasless approvals) include the chain ID, a nonce, and an expiry, and cannot be replayed across forks or after expiry. |
+| **G4.16** | Verify that protocol invariants hold when the function is called atomically inside a flash loan, flash mint, or callback. |
+| **G4.17** | Verify that token-receiver callbacks (ERC-777 `tokensReceived`, ERC-721/1155 `onReceived`, ERC-3156 flash callbacks, Uniswap V3/V4 swap & flash callbacks) cannot break the calling contract's invariants through read-only or cross-function reentrancy. |
+| **G4.18** | Verify that operations that depend on `block.timestamp` are robust to -/+15 s proposer manipulation and to L2 sequencers that may publish identical timestamps for consecutive blocks. |
 
 ## References
 

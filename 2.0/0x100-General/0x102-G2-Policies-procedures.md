@@ -31,6 +31,11 @@ Category “G2” lists requirements related to the policies, and procedures in 
 | **G2.13** | Verify that team monitors and is notified about multisig transactions. |
 | **G2.14** | Verify that team monitors and is notified about new governance votes. |
 | **G2.15** | Verify that frontline employees are trained for emergency situations and know what to do, they will be the ones that community will approach with questions. |
+| **G2.16** | Verify that the project subscribes to on-chain monitoring/incident-response services and has documented response playbooks for the alerts they raise. |
+| **G2.17** | Verify that the project monitors security advisories of every external dependency it integrates with (oracles, bridges, AMMs, lending markets) and has a procedure to react to dependency incidents. |
+| **G2.18** | Verify that the project has a verified out-of-band communication channel for incidents (e.g. signed status page, ENS-pinned domain) independent of social media accounts that could be compromised. |
+| **G2.19** | Verify that all privileged signing keys are held in hardware wallets, HSMs, or threshold-signing setups, never in hot wallets or plain files. |
+| **G2.20** | Verify that the project participates in a bug-bounty program with payout sizes commensurate with TVL. |
 
 
 ## References

@@ -21,6 +21,12 @@ Category “I3” lists requirements related to the Oracle smart contract as one
 | **I3.4** | Verify that, when using Uniswap V3 TWAP as price oracle, liquidity is high enough and is distributed widely across most of the price range. |
 | **I3.5** | Verify that, the use a decentralized off-chain oracles unsusceptible to on-chain price manipulation attacks (e.g. Chainlink) is considered for low liquidity asset, ideally combining it with on-chain oracles to detect malicious values. |
 | **I3.6** | Verify that the value you are using has had enough time to be reported as invalid and has not been. |
+| **I3.7** | Verify that Chainlink price-feed integrations validate `answer > 0`, `updatedAt != 0`, `answeredInRound >= roundId`, and `block.timestamp - updatedAt <= heartbeat`. |
+| **I3.8** | Verify that consumers handle the Chainlink min/max-answer clamp case (price pegged at bounds during extreme events, e.g. LUNA/UST) and do not treat a clamped price as a real one. |
+| **I3.9** | Verify that L2 oracle consumers read the sequencer-uptime feed and revert if the sequencer was down within the configured grace period. |
+| **I3.10** | Verify that the deviation threshold and heartbeat of the chosen oracle are documented and explicitly acceptable for the protocol's risk profile (e.g. lending vs. AMM). |
+| **I3.11** | Verify that critical price reads use a defense-in-depth combination (e.g. Chainlink + TWAP, or median across providers) rather than a single source. |
+| **I3.12** | Verify that negative, zero, and `int256.min` answers are rejected by consumers. |
 
 ## References
 

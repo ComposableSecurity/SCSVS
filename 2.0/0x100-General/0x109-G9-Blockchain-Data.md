@@ -20,6 +20,9 @@ Category “G9” lists requirements related to the blockchain data of the smart
 | **G9.3** | Verify that contract does not use string literals as keys for mappings. Verify that global constants are used instead to prevent Homoglyph attack. | 
 | **G9.4** | Verify that contract does not generate pseudorandom numbers trivially basing on the information from blockchain (e.g. seeding with the block number or block timestamp). | 
 | **G9.5** | Don't rely on block hash `block.blockhash(uint blockNumber)` for blocks older than 256 from curent block, as they always will have 0 value. |
+| **G9.6** | Verify that `block.prevrandao` (post-Merge replacement for `block.difficulty`) is not used as randomness for high-value outcomes; proposers can bias it by withholding a block. |
+| **G9.7** | Verify that on-chain randomness for high-value outcomes uses a commit-reveal scheme or a verifiable randomness source (Chainlink VRF, drand) and accounts for proposer/relayer collusion. |
+| **G9.8** | Verify that sensitive off-chain data committed on-chain is committed as a hash or encrypted ciphertext, never as plaintext that becomes public on inclusion. |
 
 
 ## References

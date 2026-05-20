@@ -13,12 +13,15 @@ Category “G12” lists requirements related to the testing process of the smar
 
 | # | Description |
 | --- | --- |
-| **G12.1** | Verify that abuser stories specified during threat modeling are covered by unit tests.  |  
+| **G12.1** | Verify that abuser stories specified during threat modeling are covered by unit tests.  |
 | **G12.2** | Verify that sensitive functions of the verified contract are covered with tests in the development phase. |
 | **G12.3** | Verify that the implementation of the verified contract has been checked for security vulnerabilities using static and dynamic analysis. |
-| **G12.4** | Verify that the specification of the smart contract has been formally verified.  | 
-| **G12.5** | Verify that the specification and the result of formal verification are included in the documentation.  | 
-| **G12.6** | Verify that *solidity-coverage* indicates excellent code coverage. |
+| **G12.4** | Verify that the specification of the smart contract has been formally verified.  |
+| **G12.5** | Verify that the specification and the result of formal verification are included in the documentation.  |
+| **G12.7** | Verify that line and branch coverage is reported (via `forge coverage`, `hardhat-coverage`, or equivalent) and that every external/public function is exercised by at least one test. |
+| **G12.8** | Verify that protocol invariants are encoded as property tests and exercised by stateful fuzzing (Foundry invariant tests, Echidna, or Medusa). |
+| **G12.9** | Verify that integrations with external protocols are tested against mainnet (or relevant L2) forks at recent blocks, not against mocks alone. |
+| **G12.10** | Verify that critical mathematical and access-control properties are covered by formal verification (Certora, Halmos, hevm symbolic execution, or Solidity SMTChecker). |
 
 ## References
 
