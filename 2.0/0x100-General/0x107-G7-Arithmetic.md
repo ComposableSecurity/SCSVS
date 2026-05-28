@@ -20,9 +20,12 @@ Category “G7” lists requirements related to the arithmetic operations of the
 | **G7.8** | Verify that rounding uses secure granularity (e.g. seconds instead of days). |
 | **G7.9** | Verify that rounding in extreme conditions (e.g. very often) does not cause amplified losses (e.g. lack of interests accrued). Use RayWad library for such calculations. |
 | **G7.10** | Verify that share/asset conversions use a `mulDiv`-style full-precision routine (e.g. OpenZeppelin `Math.mulDiv`, PRBMath, Solady `FixedPointMathLib`) to prevent intermediate 256-bit overflow and precision loss. |
-| **G7.11** | Verify that rounding direction systematically favors the protocol: shares minted round down, shares burned round up, debt rounds up, collateral rounds down. |
+| **G7.11** | Verify that the rounding direction for every value the protocol exchanges with the user is consistently against the user: charges, fees, premiums, debt, shares burned, and lock durations round up; credits, rewards, refunds, withdrawals, shares minted, collateral, and unlock durations round down. |
 | **G7.12** | Verify that all token amounts are scaled to a common precision before comparison or arithmetic, accounting for tokens with non-18 decimals (USDC=6, GUSD=2, WBTC=8). |
 | **G7.13** | Verify that fixed-point exponentiation and logarithm routines are bounded and revert on inputs outside their proven domain. |
+| **G7.14** | Verify that schedule-driven accumulators (e.g. `rewardPerToken`, `accRewardPerShare`, `globalIndex`, interest index) are advanced to the current time before any state change that affects an eligible balance, the accrual rate, or the active set, so newly added or modified positions cannot retroactively accrue value for periods they were not part of. |
+| **G7.15** | Verify that operations spanning discrete periods (epochs, weeks, days) use half-open period intervals — a timestamp at the exact boundary is accounted for in exactly one period — and that integer division of elapsed time by period length does not silently drop a partial period of accrual. |
+| **G7.16** | Verify that operations that finalize, snapshot, or aggregate state over a discrete period (e.g. epoch settlement, reward distribution, governance snapshot, period-end oracle update) execute only after the period has fully elapsed (current `block.timestamp` strictly past the period's end), so that state mutations still permitted within the period cannot retroactively change the finalized result. |
 
 ## References
 
